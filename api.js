@@ -34,7 +34,7 @@ async function checkWeather(city) {
   document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
   document.querySelector(".weather").style.display = "block";
   let img = data.weather[0].main.toLowerCase();
-  weatherIcon.src = `./images/${img}.png`;
+  weatherIcon.src = `images/${img}.png`;
 }
 
 searchBtn.addEventListener("click", () => {
